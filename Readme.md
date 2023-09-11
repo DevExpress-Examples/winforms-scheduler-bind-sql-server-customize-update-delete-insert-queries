@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WinForms Scheduler - Bind to an SQL Server database and customize Update/Delete/Insert queries without the use of SqlCommandBuilder
+# WinForms Scheduler - Bind to an SQL Server database and customize Update-Delete-Insert queries without the use of SqlCommandBuilder
 
 This example demonstrates how to bind the WinForms Scheduler control at runtime. The example shows hot to configure appointment mappings and SQL queries in code. This technique allows you to easily modify data-binding options and SQL queries.
 

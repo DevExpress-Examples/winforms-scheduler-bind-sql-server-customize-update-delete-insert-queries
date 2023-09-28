@@ -6,9 +6,9 @@
 
 # WinForms Scheduler - Bind to an SQL Server database and customize Update-Delete-Insert queries without the use of SqlCommandBuilder
 
-This example demonstrates how to bind the WinForms Scheduler control at runtime. The example shows hot to configure appointment mappings and SQL queries in code. This technique allows you to easily modify data-binding options and SQL queries.
+This example demonstrates how to bind the WinForms Scheduler control at runtime. The example shows how to configure appointment mappings and SQL queries in code. This technique allows you to easily modify data-binding options and SQL queries.
 
-In this example, we insert a [GETDATE](https://learn.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver16&redirectedfrom=MSDN) function result into a **TimeStamp** column to save the modification time along with the modified row:</p>
+In this example, we insert a [GETDATE](https://learn.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver16&redirectedfrom=MSDN) function result into a **TimeStamp** column to save the modification time along with the modified row:
 
 ```sql
 INSERT INTO CarScheduling (StartTime, EndTime, Subject, TimeStamp) VALUES (@StartTime, @EndTime, @Subject, GetDate())
@@ -20,12 +20,12 @@ DELETE FROM CarScheduling WHERE ID = @ID
 
 Do the following to test this example locally:
 
-* Setup the "SchedulerBindDynamically" sample database in your SQL Server instance.
+* Set up the "SchedulerBindDynamically" sample database in your SQL Server instance.
 * Use the *SchedulerBindDynamically.sql* file attached to this example to generate a sample database and table schema.
 
 > **Note**
 >
-> We do not use the [SqlCommandBuilder](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommandbuilder?view=dotnet-plat-ext-7.0&redirectedfrom=MSDN) class to generate SQL queries as it is shown in [How to bind SchedulerControl to MS SQL Server database at runtime](https://supportcenter.devexpress.com/ticket/details/e551/winforms-scheduler-bind-to-ms-sql-server-runtime). The `DbCommandBuilder.ConflictOption` property enables optimistic concurrency to prevent a concurrency violation error. Since we do not use this functionality, you might encounter this error when using this example. Read the following MSDN article for additional information: [Introduction to Data Concurrency in ADO.NET](http://msdn.microsoft.com/en-us/library/cs6hb8k4.aspx).
+> We do not use the [SqlCommandBuilder](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommandbuilder?view=dotnet-plat-ext-7.0&redirectedfrom=MSDN) class to generate SQL queries as shown in [How to bind SchedulerControl to MS SQL Server database at runtime](https://supportcenter.devexpress.com/ticket/details/e551/winforms-scheduler-bind-to-ms-sql-server-runtime). The `DbCommandBuilder.ConflictOption` property enables optimistic concurrency to prevent a concurrency violation error. Since we do not use this functionality, you might encounter this error when using this example. Read the following MSDN article for additional information: [Introduction to Data Concurrency in ADO.NET](http://msdn.microsoft.com/en-us/library/cs6hb8k4.aspx).
 
 
 ## Files to Review

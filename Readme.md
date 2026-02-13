@@ -39,7 +39,7 @@ Do the following to test this example locally:
 * [Updating Data Sources with DataAdapters](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/updating-data-sources-with-dataadapters?redirectedfrom=MSDN)
 * [WinForms Scheduler - Getting Started](https://docs.devexpress.com/WindowsForms/2949/controls-and-libraries/scheduler/getting-started)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-bind-sql-server-customize-update-delete-insert-queries&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-bind-sql-server-customize-update-delete-insert-queries&~~~was_helpful=no)
 
